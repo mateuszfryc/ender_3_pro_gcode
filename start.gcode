@@ -5,8 +5,7 @@ M109 S{material_print_temperature_layer_0}    ; Wait for Extruder temperature
 G4 S10                                        ; Wait for 10 seconds to allow temperature to spread
 
 G28                                           ; Home all axes
-M117 5x5 Mesh Bed Leveling               ; Display message
-G29 P1                                        ; Probe the bed with BLTouch
+M117 5x5 Mesh Bed Leveling                    ; Display message
 G29 P5                                        ; Perform 5x5 grid bed leveling
 
 M117 Purge extruder                           ; Display message
