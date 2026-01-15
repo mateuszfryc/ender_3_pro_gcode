@@ -7,6 +7,8 @@ G4 S10                                        ; Wait for 10 seconds to allow tem
 G28                                           ; Home all axes
 M117 5x5 Mesh Bed Leveling                    ; Display message
 G29 P5                                        ; Perform 5x5 grid bed leveling
+G29 A                                         ; Apply mesh bed leveling
+M420 S1                                       ; Enable mesh bed leveling
 
 M117 Purge extruder                           ; Display message
 G92 E0                                        ; Reset Extruder
